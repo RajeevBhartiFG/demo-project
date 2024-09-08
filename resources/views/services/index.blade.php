@@ -24,10 +24,8 @@
                     <p><b>N/A</b></p>
                 @endif
 
-                @if(\Carbon\Carbon::parse($data->service_start) <=  \Carbon\Carbon::now()  &&  \Carbon\Carbon::now() <=  \Carbon\Carbon::parse($data->service_end))
                     <button type="button" class="btn btn-info" onclick="showDataModel({{ $data->id }})">Add</button>
-                @endif
-
+                
             
             </div>
 
